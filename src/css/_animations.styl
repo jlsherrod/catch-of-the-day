@@ -1,6 +1,6 @@
 .order-enter
   transform: translatex(-120%)
-  transition 0.5s
+  transition all .5s
   max-height: 0
   padding: 0 !important
   &.order-enter-active
@@ -10,29 +10,24 @@
 
 .order-exit
   transform: translatex(0)
-  transition 0.5s
+  transition all .5s
   &.order-exit-active
     transform: translatex(120%)
     padding 0
-    transition 0.5s
 
 .count-enter
-  background red
-  transition 5s
+  transition all .25s
   transform translateY(100%)
   &.count-enter-active
-    background yellow
     transform translateY(0)
 
 .count-exit
-  background black
-  transform translateY(0)
-  transition 5s
+  transition all .25s
   position absolute
   left 0
   bottom 0
+  transform translateY(0)
   &.count-exit-active
-    background green
     transform translateY(-100%)
 
 

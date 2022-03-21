@@ -1,6 +1,6 @@
 .order-enter {
   transform: translatex(-120%);
-  transition: 0.5s;
+  transition: all 0.5s;
   max-height: 0;
   padding: 0 !important;
 }
@@ -11,32 +11,27 @@
 }
 .order-exit {
   transform: translatex(0);
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 .order-exit.order-exit-active {
   transform: translatex(120%);
   padding: 0;
-  transition: 0.5s;
 }
 .count-enter {
-  background: #f00;
-  transition: 5s;
+  transition: all 0.25s;
   transform: translateY(100%);
 }
 .count-enter.count-enter-active {
-  background: #ff0;
   transform: translateY(0);
 }
 .count-exit {
-  background: #000;
-  transform: translateY(0);
-  transition: 5s;
+  transition: all 0.25s;
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: translateY(0);
 }
 .count-exit.count-exit-active {
-  background: #008000;
   transform: translateY(-100%);
 }
 @font-face {
