@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Write as a stateless component
 
@@ -17,5 +18,9 @@ const Header = (props) => (
     </h3>
   </header>
 )
+
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired,
+}
 
 export default Header
